@@ -32,8 +32,7 @@ func main() {
 
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "pong",
-			"status":  "success",
+			"message": "Hai Sayang",
 		})
 	})
 
@@ -63,7 +62,7 @@ func main() {
 		})
 	})
 
-	if err := r.Run(":8080"); err != nil {
+	if err := r.Run(":9000"); err != nil {
 		panic(err.Error())
 	}
 }
